@@ -31,7 +31,7 @@
       </div>
       <form action="#" class="typing-area">
         <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
-        <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
+        <input type="text" name="message" class="input-field" placeholder="Ecrire un message ici..." autocomplete="off">
         <button>
           <img id="send-icon-btn" src="send.png" alt="">
         </button>
