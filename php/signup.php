@@ -9,7 +9,11 @@
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
             $sql = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
             if(mysqli_num_rows($sql) > 0){
+<<<<<<< HEAD
                 echo "$email - Cet e-mail existe déjà !";
+=======
+                echo "$email - Cette adresse mail existe déjà!";
+>>>>>>> cfdd416926305e99efde43fb2917cf91807b15dd
             }else{
                 if(isset($_FILES['image'])){
                     $img_name = $_FILES['image']['name'];
@@ -27,7 +31,11 @@
                             $new_img_name = $time.$img_name;
                             if(move_uploaded_file($tmp_name,"images/".$new_img_name)){
                                 $ran_id = rand(time(), 100000000);
+<<<<<<< HEAD
                                 $status = "Actif maintenant";
+=======
+                                $status = "Actif";
+>>>>>>> cfdd416926305e99efde43fb2917cf91807b15dd
                                 $encrypt_pass = md5($password);
                                 $insert_query = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, img, status)
                                 VALUES ({$ran_id}, '{$fname}','{$lname}', '{$email}', '{$encrypt_pass}', '{$new_img_name}', '{$status}')");
@@ -36,6 +44,7 @@
                                     if(mysqli_num_rows($select_sql2) > 0){
                                         $result = mysqli_fetch_assoc($select_sql2);
                                         $_SESSION['unique_id'] = $result['unique_id'];
+<<<<<<< HEAD
                                         echo "Succès";
                                     }else{
                                         echo "Cette adresse e-mail n'existe pas!";
@@ -49,13 +58,35 @@
                         }
                     }else{
                         echo "Veuillez uploader un fichier image - jpeg, png, jpg";
+=======
+                                        echo "succès";
+                                    }else{
+                                        echo "Cette adresse mail n'existe pas!";
+                                    }
+                                }else{
+                                    echo "Une erreur est survenue. Veuillez réessayer!";
+                                }
+                            }
+                        }else{
+                            echo "Veuillez importer une image d'extension - jpeg, png, jpg";
+                        }
+                    }else{
+                        echo "Veuillez importer une image d'extension - jpeg, png, jpg";
+>>>>>>> cfdd416926305e99efde43fb2917cf91807b15dd
                     }
                 }
             }
         }else{
+<<<<<<< HEAD
             echo "$email n'est pas un e-mail valide!";
         }
     }else{
         echo "Tous les champs de saisie sont obligatoires!";
+=======
+            echo "$email n'est pas une adresse valide!";
+        }
+    }else{
+        echo "Veuillez entrer toutes les informations requises!";
+>>>>>>> cfdd416926305e99efde43fb2917cf91807b15dd
     }
 ?>
