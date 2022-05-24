@@ -13,7 +13,7 @@ continueBtn.onclick = () => {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 let data = xhr.response;
-                if (data === 'success') {
+                if (data === 'succès') {
                     location.href = 'users.php';
                 } else {
                     errorText.style.display = 'block';

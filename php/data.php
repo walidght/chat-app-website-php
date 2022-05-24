@@ -12,7 +12,7 @@
         }else{
             $you = "";
         }
-        ($row['status'] == "Hors ligne") ? $offline = "offline" : $offline = "";
+        ($row['status'] == "Hors-ligne") ? $offline = "offline" : $offline = "";
         ($outgoing_id == $row['unique_id']) ? $hid_me = "hide" : $hid_me = "";
 
         $output .= '<a href="chat.php?user_id='. $row['unique_id'] .'">
