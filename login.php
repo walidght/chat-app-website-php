@@ -16,9 +16,9 @@
             </div>
             <div class="textContainer">
                 <div class="text">
-                    <p>The social media to<br> 
-                        make<br>
-                        New Friends</p>
+                    <p>Le réseau social pour<br> 
+                        se faire des<br>
+                        nouveaux potes</p>
                 </div>
                 
             </div>
@@ -29,15 +29,15 @@
 
         <div class="wrapper">
             <section class="form login">
-                <p class="head">Welcome Back</p>
+                <p class="head">Bon retour parmis nous!</p>
                 <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
                     <div class="error-text"></div>
                     <div class="field input">
-                        <label>Email Address</label>
+                        <label>Adresse mail</label>
                         <input type="text" name="email"  required>
                     </div>
                     <div class="field input">
-                        <label>Password</label>
+                        <label>Mot de passe</label>
                         <input type="password" name="password"  required>
                         <i class="fas fa-eye"></i>
                     </div>
@@ -45,7 +45,7 @@
                         <div class="subButton">
                             <input type="submit" name="submit" value="Login" id="login-btn">
                         </div>
-                        <div class="logLink">Not yet signed up? <a href="index.php">Signup now</a></div>
+                        <div class="logLink">Pas encore inscris? <a href="index.php">Rejoins-nous maintenant</a></div>
                     </div>
                 </form>
             </section>
