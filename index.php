@@ -55,7 +55,7 @@
                     </div>
                     <div class="lastThing">
                         <div class="subButton">
-                            <input type="submit" name="submit" value="Signup" id="signup-btn">
+                            <input type="submit" name="submit" value="S'inscrire" id="signup-btn">
                         </div>
                         <div class="logLink">Déjà inscris? <a href="login.php">Connecte-toi !</a></div>
                     </div>
