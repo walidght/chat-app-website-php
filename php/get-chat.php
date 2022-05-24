@@ -27,7 +27,7 @@
                 }
             }
         }else{
-            $output .= '<div class="text">No messages are available. Once you send message they will appear here.</div>';
+            $output .= '<div class="text">Aucun message n\'est disponible. Une fois que vous avez envoyé un message, ils apparaîtront ici.</div>';
         }
         echo $output;
     }else{

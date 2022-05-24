@@ -43,7 +43,7 @@
                     </div>
                     <div class="lastThing">
                         <div class="subButton">
-                            <input type="submit" name="submit" value="Login" id="login-btn">
+                            <input type="submit" name="submit" value="connexion" id="login-btn">
                         </div>
                         <div class="logLink">Pas encore inscris? <a href="index.php">Rejoins-nous maintenant</a></div>
                     </div>

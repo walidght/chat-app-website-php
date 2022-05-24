@@ -14,17 +14,17 @@
                 $sql2 = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}");
                 if($sql2){
                     $_SESSION['unique_id'] = $row['unique_id'];
-                    echo "success";
+                    echo "Succès";
                 }else{
-                    echo "Something went wrong. Please try again!";
+                    echo "Quelque chose s'est mal passé. Veuillez réessayer!";
                 }
             }else{
                 echo "Email or Password is Incorrect!";
             }
         }else{
-            echo "$email - This email not Exist!";
+            echo "$email - Cet e-mail n'existe pas !";
         }
     }else{
-        echo "All input fields are required!";
+        echo "Tous les champs de saisie sont obligatoires !";
     }
 ?>
